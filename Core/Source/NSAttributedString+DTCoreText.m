@@ -14,7 +14,7 @@
 @implementation NSAttributedString (DTCoreText)
 
 #pragma mark Text Attachments
-- (NSArray *)textAttachmentsWithPredicate:(NSPredicate *)predicate class:(Class)class
+- (NSArray *)textAttachmentsWithPredicate:(NSPredicate *)predicate class:(Class)classType
 {
 	if (![self length])
 	{
@@ -38,7 +38,7 @@
 			return;
 		}
 		
-		if (class && ![attachment isKindOfClass:class])
+		if (classType && ![attachment isKindOfClass:classType])
 		{
 			// doesn't fit class, next
 			return;
