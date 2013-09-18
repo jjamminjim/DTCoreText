@@ -1,7 +1,3 @@
-.DS_Store
-build
-*.mode1v3
-*.pbxuser
-project.xcworkspace
-xcuserdata
-.svn
+CustomBadge.xcodeproj/xcuserdata/*
+DTCoreText.xcodeproj/project.xcworkspace/xcuserdata
+DTCoreText.xcodeproj/xcuserdata
