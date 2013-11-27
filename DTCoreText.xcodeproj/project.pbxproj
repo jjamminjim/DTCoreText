@@ -370,7 +370,7 @@
 		A7B4E2E91686FE2400717707 /* libDTHTMLParser_iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B4E2D61686FDB300717707 /* libDTHTMLParser_iOS.a */; };
 		A7C1CC0C14D6C4F0008D6468 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A79499FF14C6256B00A8CCDE /* libxml2.dylib */; };
 		A7C1CC0D14D6C4F2008D6468 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A79499FF14C6256B00A8CCDE /* libxml2.dylib */; };
-		A7C1CC0F14D6CFD5008D6468 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C1CC0E14D6CFD5008D6468 /* AppKit.framework */; };
+		A7C1CC0F14D6CFD5008D6468 /* DTCoreText in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C1CC0E14D6CFD5008D6468 /* DTCoreText */; };
 		A7C5D01614D7E3DC00AF1D75 /* DTImage+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5D01414D7E3BB00AF1D75 /* DTImage+HTML.m */; };
 		A7C5D01714D7E3DC00AF1D75 /* DTImage+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5D01414D7E3BB00AF1D75 /* DTImage+HTML.m */; };
 		A7C7ACD514D924B1005A9C69 /* NSMutableString+HTML.h in Headers */ = {isa = PBXBuildFile; fileRef = A7C7ACD314D924B1005A9C69 /* NSMutableString+HTML.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -475,7 +475,7 @@
 		A7F5671514D841EA00D1F167 /* NSString+CSS.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F5671214D841E900D1F167 /* NSString+CSS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7F5671614D841EA00D1F167 /* NSString+CSS.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F5671314D841E900D1F167 /* NSString+CSS.m */; };
 		A7F5671714D841EA00D1F167 /* NSString+CSS.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F5671314D841E900D1F167 /* NSString+CSS.m */; };
-		A7F5671D14D8469000D1F167 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5671C14D8469000D1F167 /* Cocoa.framework */; };
+		A7F5671D14D8469000D1F167 /* DTCoreText.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5671C14D8469000D1F167 /* DTCoreText.xcodeproj */; };
 		A7F5672714D8506C00D1F167 /* NSAttributedString+SmallCaps.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F5672514D8506B00D1F167 /* NSAttributedString+SmallCaps.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7F5672814D8506C00D1F167 /* NSAttributedString+SmallCaps.h in Headers */ = {isa = PBXBuildFile; fileRef = A7F5672514D8506B00D1F167 /* NSAttributedString+SmallCaps.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7F5672914D8506C00D1F167 /* NSAttributedString+SmallCaps.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F5672614D8506C00D1F167 /* NSAttributedString+SmallCaps.m */; };
@@ -553,7 +553,7 @@
 		A7FB12B2175E23C200D4B7F0 /* libDTHTMLParser_Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B4E2D81686FDB300717707 /* libDTHTMLParser_Mac.a */; };
 		A7FB12C9175F49A400D4B7F0 /* DTCoreTextFontOverrides.plist in Resources */ = {isa = PBXBuildFile; fileRef = A788CA2114863EF100E1AFD9 /* DTCoreTextFontOverrides.plist */; };
 		DDCCEB1E17005A4F009FF923 /* css.css in Resources */ = {isa = PBXBuildFile; fileRef = DDCCEB1D17005A4F009FF923 /* css.css */; };
-		E2262DC71638331500BFDAD7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5671C14D8469000D1F167 /* Cocoa.framework */; };
+		E2262DC71638331500BFDAD7 /* DTCoreText.xcodeproj in Frameworks */ = {isa = PBXBuildFile; fileRef = A7F5671C14D8469000D1F167 /* DTCoreText.xcodeproj */; };
 		E2262DD51638336700BFDAD7 /* DTColor+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A788C95314863E8700E1AFD9 /* DTColor+HTML.m */; };
 		E2262DD61638336700BFDAD7 /* DTImage+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5D01414D7E3BB00AF1D75 /* DTImage+HTML.m */; };
 		E2262DD71638337D00BFDAD7 /* DTCoreTextConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = A7949A9C14CC565F00A8CCDE /* DTCoreTextConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -593,7 +593,7 @@
 		E2262DFE163833AD00BFDAD7 /* DTTextBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = A7081EA11503645F002987F1 /* DTTextBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2262DFF163833AD00BFDAD7 /* DTTextBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = A7081EA215036460002987F1 /* DTTextBlock.m */; };
 		E2262E021638345E00BFDAD7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A79499FF14C6256B00A8CCDE /* libxml2.dylib */; };
-		E2262E031638346200BFDAD7 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C1CC0E14D6CFD5008D6468 /* AppKit.framework */; };
+		E2262E031638346200BFDAD7 /* DTCoreText in Frameworks */ = {isa = PBXBuildFile; fileRef = A7C1CC0E14D6CFD5008D6468 /* DTCoreText */; };
 		E2262E0B1638351C00BFDAD7 /* default.css in Sources */ = {isa = PBXBuildFile; fileRef = A76994F914DBB5F70047CC8D /* default.css */; };
 		E2262EA41638485F00BFDAD7 /* DTCoreText.h in Headers */ = {isa = PBXBuildFile; fileRef = A70B4C9E1486558200873A4A /* DTCoreText.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -1008,7 +1008,7 @@
 		A7949A4614CAF58C00A8CCDE /* DTHTMLAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DTHTMLAttributedStringBuilder.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A7949A4F14CC44D200A8CCDE /* DTCoreTextConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DTCoreTextConstants.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		A7949A5814CC456000A8CCDE /* MacUnitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacUnitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7949A5D14CC456000A8CCDE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A7949A5D14CC456000A8CCDE /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = "../../../../../../../../../Sources/caboapps/geoquest-ios/Libraries/DTCoreText/DTCoreText.xcodeproj"; sourceTree = SDKROOT; };
 		A7949A5E14CC456000A8CCDE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A7949A5F14CC456000A8CCDE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A7949A6D14CC45B400A8CCDE /* MacUnitTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MacUnitTest-Info.plist"; sourceTree = "<group>"; };
@@ -1028,7 +1028,7 @@
 		A7AE582A1725391900A9BF61 /* DTObjectTextAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTObjectTextAttachment.m; sourceTree = "<group>"; };
 		A7B0B56614D9921F0091C2C9 /* NSAttributedString+DTCoreText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+DTCoreText.h"; sourceTree = "<group>"; };
 		A7B0B56714D9921F0091C2C9 /* NSAttributedString+DTCoreText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+DTCoreText.m"; sourceTree = "<group>"; };
-		A7C1CC0E14D6CFD5008D6468 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		A7C1CC0E14D6CFD5008D6468 /* DTCoreText */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DTCoreText; path = "../../../../Users/Kraig/Library/Developer/Xcode/DerivedData/dixiehigh-iosDev-ehiydrkatisvwyeweqzleleqkrmj/Build/DTCoreText"; sourceTree = DEVELOPER_DIR; };
 		A7C5D01314D7E3BB00AF1D75 /* DTImage+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "DTImage+HTML.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A7C5D01414D7E3BB00AF1D75 /* DTImage+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DTImage+HTML.m"; sourceTree = "<group>"; };
 		A7C7ACD314D924B1005A9C69 /* NSMutableString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+HTML.h"; sourceTree = "<group>"; };
@@ -1086,7 +1086,7 @@
 		A7F34D3F16CFC7C90054A512 /* RTL.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RTL.html; sourceTree = "<group>"; };
 		A7F5671214D841E900D1F167 /* NSString+CSS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSString+CSS.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		A7F5671314D841E900D1F167 /* NSString+CSS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = "NSString+CSS.m"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		A7F5671C14D8469000D1F167 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = SDKs/MacOSX10.7.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A7F5671C14D8469000D1F167 /* DTCoreText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DTCoreText.xcodeproj; path = "../../../../Sources/caboapps/geoquest-ios/Libraries/DTCoreText/DTCoreText.xcodeproj"; sourceTree = DEVELOPER_DIR; };
 		A7F5672514D8506B00D1F167 /* NSAttributedString+SmallCaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+SmallCaps.h"; sourceTree = "<group>"; };
 		A7F5672614D8506C00D1F167 /* NSAttributedString+SmallCaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+SmallCaps.m"; sourceTree = "<group>"; };
 		A7F7EFCD1573603100F5A4D0 /* libDTCoreText_no_DTFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDTCoreText_no_DTFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1154,8 +1154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A76F503D1705ABAC00DF52D5 /* DTCoreText.framework in Frameworks */,
-				A7F5671D14D8469000D1F167 /* Cocoa.framework in Frameworks */,
-				A7C1CC0F14D6CFD5008D6468 /* AppKit.framework in Frameworks */,
+				A7F5671D14D8469000D1F167 /* DTCoreText.xcodeproj in Frameworks */,
+				A7C1CC0F14D6CFD5008D6468 /* DTCoreText in Frameworks */,
 				A7949A5914CC456000A8CCDE /* SenTestingKit.framework in Frameworks */,
 				A7C1CC0D14D6C4F2008D6468 /* libxml2.dylib in Frameworks */,
 			);
@@ -1175,8 +1175,8 @@
 			files = (
 				A7FB12B2175E23C200D4B7F0 /* libDTHTMLParser_Mac.a in Frameworks */,
 				A70E62FB16C253EC009B47BF /* libDTFoundation_Mac.a in Frameworks */,
-				E2262DC71638331500BFDAD7 /* Cocoa.framework in Frameworks */,
-				E2262E031638346200BFDAD7 /* AppKit.framework in Frameworks */,
+				E2262DC71638331500BFDAD7 /* DTCoreText.xcodeproj in Frameworks */,
+				E2262E031638346200BFDAD7 /* DTCoreText in Frameworks */,
 				E2262E021638345E00BFDAD7 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1196,7 +1196,7 @@
 				E2262DC61638331500BFDAD7 /* DTCoreText.framework */,
 			);
 			name = Products;
-			path = ../..;
+			path = "../../../../../../../../../../Sources/caboapps/geoquest-ios/Libraries/DTCoreText";
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
@@ -1217,9 +1217,9 @@
 			isa = PBXGroup;
 			children = (
 				A79499FF14C6256B00A8CCDE /* libxml2.dylib */,
-				A7C1CC0E14D6CFD5008D6468 /* AppKit.framework */,
+				A7C1CC0E14D6CFD5008D6468 /* DTCoreText */,
 				A7DBE4F712E6E5B000F25897 /* AVFoundation.framework */,
-				A7F5671C14D8469000D1F167 /* Cocoa.framework */,
+				A7F5671C14D8469000D1F167 /* DTCoreText.xcodeproj */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				A73BC42812DA014300F064C6 /* CoreText.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -1232,6 +1232,16 @@
 				A7949A5C14CC456000A8CCDE /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C4B1179184561A60025F71C /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C4B117B184561A60025F71C /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		A04CF1971738BBF00036E735 /* Accessibility */ = {
@@ -1507,7 +1517,7 @@
 		A7949A5C14CC456000A8CCDE /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A7949A5D14CC456000A8CCDE /* AppKit.framework */,
+				A7949A5D14CC456000A8CCDE /* DTCoreText.xcodeproj */,
 				A7949A5E14CC456000A8CCDE /* CoreData.framework */,
 				A7949A5F14CC456000A8CCDE /* Foundation.framework */,
 			);
@@ -2089,6 +2099,14 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 4C4B1179184561A60025F71C /* Products */;
+					ProjectRef = A7949A5D14CC456000A8CCDE /* DTCoreText.xcodeproj */;
+				},
+				{
+					ProductGroup = 4C4B117B184561A60025F71C /* Products */;
+					ProjectRef = A7F5671C14D8469000D1F167 /* DTCoreText.xcodeproj */;
+				},
 				{
 					ProductGroup = A7E383AC160DFEA700CF72D6 /* Products */;
 					ProjectRef = A7E383AB160DFEA700CF72D6 /* DTFoundation.xcodeproj */;
