@@ -9,7 +9,7 @@
 #import "DTCompatibility.h"
 #import "NSStringCSSTest.h"
 #import "NSString+CSS.h"
-#import "DTColor+HTML.h"
+#import "DTColor+Compatibility.h"
 
 @implementation NSStringCSSTest
 
@@ -123,5 +123,116 @@
 	STAssertTrue(isCSSLength, @"Should be a valid font size value");
 }
 
+- (void)testMultiFontFamily
+{
+	NSString *style = @"font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', Times New Roman, monospace";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	
+	id font =  dictionary[@"font-family"];
+	
+	STAssertTrue([font isKindOfClass:[NSArray class]], @"Font count should be an array");
+	STAssertTrue([font count] == 6, @"6 fonts should be returned");
+}
+
+- (void)testSimpleQuotedFontFamily
+{
+	NSString *style = @"font-family: 'Courier New'";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	
+	id font =  dictionary[@"font-family"];
+	
+	STAssertEqualObjects(@"Courier New", font, @"Font count should be \"Courier New\"");
+}
+
+- (void)testSimpleUnquotedFontFamily
+{
+	NSString *style = @"font-family: Courier New";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	
+	id font =  dictionary[@"font-family"];
+	
+	STAssertEqualObjects(@"Courier New", font, @"Font count should be \"Courier New\"");
+}
+
+- (void)testMultiFontFamilyWithSize
+{
+	NSString *style = @"font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', Times New Roman, monospace; font-size: 60px;";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	
+	id font =  dictionary[@"font-family"];
+	NSString *size = dictionary[@"font-size"];
+	
+	STAssertTrue([font isKindOfClass:[NSArray class]], @"Font count should be an array");
+	STAssertTrue([font count] == 6, @"6 fonts should be returned");
+	STAssertTrue([size isEqualToString:@"60px"], @"Font size should be 60px");
+}
+
+- (void)testTextShadow
+{
+	NSString *style = @"font-family:Helvetica;font-weight:bold;font-size:30px; color:#FFF; text-shadow: -1px -1px #555, 1px 1px #EEE";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	id shadow = dictionary[@"text-shadow"];
+	
+	STAssertEqualObjects(@"-1px -1px #555, 1px 1px #EEE", shadow, @"Shadow should be \"-1px -1px #555, 1px 1px #EEE\"");
+	STAssertTrue([shadow isKindOfClass:[NSString class]], @"shadow count should be a string");
+}
+
+- (void)testColor
+{
+	NSString *style = @"font-family:Helvetica;font-weight:bold;color:rgb(255, 0, 0);font-size:30px;";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	id color = dictionary[@"color"];
+	
+	STAssertEqualObjects(@"rgb(255, 0, 0)", color, @"Color should be \"rgb(255, 0, 0)\"");
+	STAssertTrue([color isKindOfClass:[NSString class]], @"shadow count should be a string");	
+}
+
+- (void)textBackgroundColor
+{
+	NSString *style = @"font-family:Helvetica;font-weight:bold;background-color:rgb(255, 88, 44);font-size:30px;";
+	NSDictionary *dictionary = [style dictionaryOfCSSStyles];
+	id color = dictionary[@"background-color"];
+	
+	STAssertEqualObjects(@"rgb(255, 0, 0)", color, @"Background color should be \"rgb(255, 88, 44)\"");
+}
+
+- (void)testEdgeInsets
+{
+	// 4 values
+	NSString *style = @"10px 20px 30px 40px";
+	DTEdgeInsets insets = [style DTEdgeInsetsRelativeToCurrentTextSize:12.0 textScale:1.0];
+	
+	STAssertEquals(insets.top, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.left, (CGFloat)40, @"top should be 40");
+	STAssertEquals(insets.bottom, (CGFloat)30, @"top should be 30");
+	STAssertEquals(insets.right, (CGFloat)20, @"top should be 20");
+
+	// 3 values
+	style = @"10px 20px 30px";
+	insets = [style DTEdgeInsetsRelativeToCurrentTextSize:12.0 textScale:1.0];
+	
+	STAssertEquals(insets.top, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.left, (CGFloat)20, @"top should be 20");
+	STAssertEquals(insets.bottom, (CGFloat)30, @"top should be 30");
+	STAssertEquals(insets.right, (CGFloat)20, @"top should be 20");
+	
+	// 2 values
+	style = @"10px 20px";
+	insets = [style DTEdgeInsetsRelativeToCurrentTextSize:12.0 textScale:1.0];
+	
+	STAssertEquals(insets.top, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.left, (CGFloat)20, @"top should be 20");
+	STAssertEquals(insets.bottom, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.right, (CGFloat)20, @"top should be 20");
+
+	// 1 value
+	style = @"10px";
+	insets = [style DTEdgeInsetsRelativeToCurrentTextSize:12.0 textScale:1.0];
+	
+	STAssertEquals(insets.top, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.left, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.bottom, (CGFloat)10, @"top should be 10");
+	STAssertEquals(insets.right, (CGFloat)10, @"top should be 10");
+}
 
 @end
