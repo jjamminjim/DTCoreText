@@ -8,14 +8,15 @@
 #import "DTCoreTextConstants.h"
 #import "DTCompatibility.h"
 
-#import "DTColor+HTML.h"
+#import "DTColor+Compatibility.h"
 #import "DTImage+HTML.h"
 
 // common utilities
-#import "DTUtils.h"
 #if TARGET_OS_IPHONE
 #import "DTCoreTextFunctions.h"
 #endif
+
+#import "DTColorFunctions.h"
 
 // common classes
 #import "DTCSSListStyle.h"
